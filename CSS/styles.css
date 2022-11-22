@@ -8,11 +8,14 @@ body{
 }
 /* Con este simple cambio toda la pagina se puede trabajar y normalizar en rem 1rem = 10px */
 
-h1{
+/* Existen diversas maneras de hacer selecciones unos ejemplos:  */
+/* p{} = selector de etiqueta / .clase{}=selector de clase / #id=selector de ID  */
+.titulo{
     color: black; 
     text-align: center;
+    font-size: 4rem;
 
 }
-span{
-    font-size: 20px;
+.titulo span{
+    font-size: 2rem;
 }
