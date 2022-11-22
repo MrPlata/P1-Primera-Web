@@ -1,0 +1,21 @@
+/* El cambio que se hace en el HTML Y BODY  es para reiniciar el font size y que 1 rem = 10px */
+/* Esto nos sirve para facilitar el trabajo multi dispositivo  */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+/* Con este simple cambio toda la pagina se puede trabajar y normalizar en rem 1rem = 10px */
+
+/* Existen diversas maneras de hacer selecciones unos ejemplos:  */
+/* p{} = selector de etiqueta / .clase{}=selector de clase / #id=selector de ID  */
+.titulo{
+    color: black; 
+    text-align: center;
+    font-size: 4rem;
+
+}
+.titulo span{
+    font-size: 2rem;
+}
