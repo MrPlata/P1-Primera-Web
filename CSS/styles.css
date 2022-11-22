@@ -24,9 +24,33 @@ body{
 .titulo{
     color: var(--negro); 
     text-align: center;
-    font-size: 4rem;
-    
+    font-size: 4rem; 
 }
 .titulo span{
     font-size: 2rem;
+}
+.contenedor{
+    width: 100rem;
+    margin: 0 auto;
+}
+.nav-bckg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+
+}
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+/* :hover sirve cuando para determinar una accion en css */
+/* existen mas pseudo clases :hover :visited etc */
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
 }
