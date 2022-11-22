@@ -1,3 +1,13 @@
+/* Pseudo elemento o custom property */
+:root{
+    --blanco : #ffffff;
+    --negro : #212122;
+    --primario : #FFC107;
+    --secundario : #0097A7;
+    --gris : #757575;
+    /* Tambien dse pueden definir diferentes elementos como tamaño */
+    /* --fuente preincipal : 3.8rem; */
+}
 /* El cambio que se hace en el HTML Y BODY  es para reiniciar el font size y que 1 rem = 10px */
 /* Esto nos sirve para facilitar el trabajo multi dispositivo  */
 html{
@@ -5,16 +15,17 @@ html{
 }
 body{
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 /* Con este simple cambio toda la pagina se puede trabajar y normalizar en rem 1rem = 10px */
 
 /* Existen diversas maneras de hacer selecciones unos ejemplos:  */
 /* p{} = selector de etiqueta / .clase{}=selector de clase / #id=selector de ID  */
 .titulo{
-    color: black; 
+    color: var(--negro); 
     text-align: center;
     font-size: 4rem;
-
+    
 }
 .titulo span{
     font-size: 2rem;
