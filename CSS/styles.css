@@ -15,7 +15,17 @@
 /* Esto nos sirve para facilitar el trabajo multi dispositivo  */
 html{
     font-size: 62.5%;
+    /*Se agrega elemento por temas de box sizing para .hero*/
+    box-sizing: border-box;
 }
+    /* "*" es un selector universal */
+    /* "," sirve para juntar clases con propiedades iguales*/
+    /*"before" y "after" son pseudo elementos (no son seleccionables en terminal)*/
+    *, *:before, *:after{
+        box-sizing: inherit;
+        /*hace que un elemento no aumente su tamaño total con padding y con margin*/
+    }
+    
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -76,6 +86,8 @@ body{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
+    padding: 20px;
 }
 
 
