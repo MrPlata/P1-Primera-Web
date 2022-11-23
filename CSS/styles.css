@@ -87,7 +87,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+
+    /*Sirve para tomar como referencia la clase padre
+        se le da una posicion relativa */
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgb(0, 0, 0 , 70%);/*Sintaxis vieja mucho soporte*/
+    background-color: rgb(0 0 0/ 70%);/*Sintaxis nueva poco soporte aun*/
+    height: 100%;
+    width: 100%;
 }
 
 
