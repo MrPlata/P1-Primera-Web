@@ -33,6 +33,17 @@ body{
     background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 60% );
 }
 
+.sombra{
+    /* se elimina ya que es para versiones viejas y no se necesitan
+    -webkit-box-shadow: 0px 27px 42px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 27px 42px 2px rgba(0,0,0,0.75);
+    */
+    box-shadow: 0px 27px 42px 2px rgba(0,0,0,0.75);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
 /*DEFINICION DE HEADINGS*/
 /*Para mas comodidad se definen las caracteristicas de los "h" para que sea consistente en todo el proyecto*/
 h1{
@@ -63,8 +74,9 @@ h1, h2, h3 {
 /*NAVEGACION PRINCIPAL STYLE*/
 .contenedor{
     max-width: 100rem;
-    margin: 0 auto;
+    margin: auto;
 }
+
 .nav-bckg{
     background-color: var(--secundario);
 }
@@ -107,6 +119,8 @@ h1, h2, h3 {
     /*Sirve para tomar como referencia la clase padre
         se le da una posicion relativa */
     position: relative;
+
+    margin-bottom: 2rem;
 }
 .contenido-hero{
     position: absolute;
@@ -146,6 +160,10 @@ h1, h2, h3 {
     .boton{
         width: auto;
     }
+}
+.servicios{
+    /*display flex y gris son diferentes depende de que se necesite*/
+    display: grid;
 }
 
 
