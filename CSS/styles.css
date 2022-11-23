@@ -30,6 +30,7 @@ html{
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 60% );
 }
 
 /*DEFINICION DE HEADINGS*/
@@ -59,7 +60,7 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
-/*NAVEGACION STYLE*/
+/*NAVEGACION PRINCIPAL STYLE*/
 .contenedor{
     max-width: 100rem;
     margin: 0 auto;
@@ -127,5 +128,25 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
 }
+/*Boton reutilizable*/
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem ;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+
+}@media (min-width: 768) {
+    .boton{
+        width: auto;
+    }
+}
+
 
 
