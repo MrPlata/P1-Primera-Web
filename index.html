@@ -101,34 +101,38 @@
                     <p>temporibus, natus nam nihil ipsa aliquam laborum voluptas, quaerat inventore reprehenderit! </p>
             </section>
         </div> 
+        <!--FORMULARIO-->
         <section>
             <h2>Contacto</h2>
-            <form action="">
+            <form class="formulario">
                 <fieldset>
                     <legend>Contactanos llenando todos los campos</legend>
-                <!-Se divide cada seccion con un div para poder controlarlos despues-->
-                    <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre">
+                    <div class="contenedor-campos">
+                        <!--Se divide cada seccion con un div para poder controlarlos despues-->
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label >Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Telefono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="tu e-mail">
+                        </div>
+
+                        <div class="campo">
+                            <label >Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
                     </div>
 
-                    <div>
-                    <label >Telefono</label>
-                    <input type="tel" placeholder="Telefono">
+                    <div class="enviar">
+                        <button class="boton" type="submit" value="enviar">Enviar </button>
                     </div>
-
-                    <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="tu e-mail">
-                    </div>
-
-                    <div>
-                    <label >Mensaje</label>
-                    <textarea ></textarea>
-                    </div>
-
-                    <button type="submit" value="enviar">Enviar </button>
-
 
                 </fieldset>
             </form>
