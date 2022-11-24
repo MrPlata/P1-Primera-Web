@@ -18,6 +18,16 @@ html{
     font-size: 62.5%;
     /*Se agrega elemento por temas de box sizing para .hero*/
     box-sizing: border-box;
+    /**/
+    scroll-snap-type: y mandatory;
+}
+
+.servicio, 
+.navegacion-principal, 
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
 }
     /* "*" es un selector universal */
     /* "," sirve para juntar clases con propiedades iguales*/
@@ -169,7 +179,6 @@ h1, h2, h3 {
 }
 
 /*SERVICIOS*/
-
 @media (min-width: 768px) {
     .servicios{
         display: grid;
@@ -260,7 +269,6 @@ h1, h2, h3 {
     text-align: center;
     color: #ffffff;
     font-size: 1.2rem;
-
 }
 
 
