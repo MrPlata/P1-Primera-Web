@@ -5,6 +5,7 @@
     --negro : #212122;
     --primario : #FFC107;
     --secundario : #0097A7;
+    --black : #212122;
     --gris : #757575;
     /* Tambien dse pueden definir diferentes elementos como tamaño */
     /* --fuente preincipal : 3.8rem; */
@@ -30,7 +31,7 @@ html{
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 60% );
+    background-image: linear-gradient(to top, var(--primario) -50%, var(--black) 80% );
 }
 
 .sombra{
@@ -64,7 +65,7 @@ h1, h2, h3 {
 /* Existen diversas maneras de hacer selecciones unos ejemplos:  */
 /* p{} = selector de etiqueta / .clase{}=selector de clase / #id=selector de ID  */
 .titulo{
-    color: var(--negro); 
+    color: var(--blanco); 
     font-size: 4rem; 
 }
 .titulo span{
@@ -73,10 +74,9 @@ h1, h2, h3 {
 
 /*NAVEGACION PRINCIPAL STYLE*/
 .contenedor{
-    max-width: 100rem;
+    width: 95% ;
     margin: auto;
 }
-
 .nav-bckg{
     background-color: var(--secundario);
 }
@@ -85,6 +85,7 @@ h1, h2, h3 {
     flex-direction: column; 
     align-items: center;
 }
+
 /* Media Queri 480px telefono 768px tablet 1140px PC 1400px TV*/
 @media (min-width: 480px){
     .navegacion-principal{
@@ -171,7 +172,7 @@ h1, h2, h3 {
 
 @media (min-width: 768px) {
     .servicios{
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
     }
@@ -202,8 +203,8 @@ h1, h2, h3 {
 
 /*FORMULARIO*/
 .formulario{
-    background-color: var(--gris);
-    width: min(60rem, 100%);/*Utiliza el valor mas pequeño*/
+    background-color: var(--black);
+    width: min(120rem, 100%);/*Utiliza el valor mas pequeño*/
     margin: 0 auto;
     padding: 2rem;
     border-radius: 2rem;
@@ -218,9 +219,19 @@ h1, h2, h3 {
     margin-bottom: 1rem;
     color: var(--primario);
 }
-/*campos */
-.contenedor-campos{
-
+/*Campos */
+@media (min-width: 768px) {
+    .contenedor-campos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto auto 23rem ;
+    column-gap: 1rem;
+    }
+    /*este comando sirve para selccionar la clsse hijo de una clase superior por orden nuemrico*/
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/ 3;
+    }
 }
 .campo{
     margin-bottom: 1rem;
@@ -242,6 +253,14 @@ h1, h2, h3 {
 }
 .enviar .boton{
     width: 100%;
+}
+
+/*FOOTER*/
+.footer{ 
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+
 }
 
 
