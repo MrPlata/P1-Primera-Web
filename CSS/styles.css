@@ -18,10 +18,10 @@ html{
     font-size: 62.5%;
     /*Se agrega elemento por temas de box sizing para .hero*/
     box-sizing: border-box;
-    /**/
+    /*scroll snap*/
     scroll-snap-type: y mandatory;
 }
-
+/*Scroll snap*/
 .servicio, 
 .navegacion-principal, 
 .formulario{
@@ -164,14 +164,14 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
-    width: 90%;
+    width: auto;
     text-align: center;
     border: none;
 
 }
 @media (min-width: 768) {
     .boton{
-        width: auto;
+        width: auto%;
     }
 }
 .boton:hover{
